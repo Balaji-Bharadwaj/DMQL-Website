@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title>Query Runner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Query Runner</h1>
+        <form method="POST" action="/query">
+            <div class="form-group">
+                <label for="query">Enter your SQL query:</label>
+                <textarea class="form-control" name="query" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Run Query</button>
+        </form>
+    </div>
+</body>
+</html>

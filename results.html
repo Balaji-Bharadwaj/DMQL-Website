@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Query Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Query Results</h1>
+        <div class="table-responsive">
+            {{ table | safe }}
+        </div>
+        <a href="/" class="btn btn-primary">Back to Query Page</a>
+    </div>
+</body>
+</html>
